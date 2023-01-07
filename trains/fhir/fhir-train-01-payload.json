@@ -1,0 +1,29 @@
+{
+    "APIRequest":{
+        "protocol": "HTTP",
+        "method": "GET",
+        "resource": "/Condition",
+        "parameters": [
+            {
+                "name": "code",
+                "value": "R83.03",
+                "isMandatory": true
+            },
+            {
+                "name": "onset-date",
+                "value": "2021-04-02",
+                "isMandatory": false
+            },
+            {
+                "name": "subject.address-state",
+                "value": "Noord-Holland",
+                "isMandatory": false
+            },
+            {
+                "name": "_summary",
+                "value": "count",
+                "isMandatory": false
+            }
+        ]
+    }
+}

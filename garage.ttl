@@ -1,0 +1,41 @@
+# Repository: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl
+# Catalog: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains-catalog.ttl
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fdp: <https://w3id.org/fdp/fdp-o#> .
+@prefix fdt: <https://w3id.org/fdt/fdt-o#> .
+@prefix : <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl#> .
+
+<https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl> a dcat:Resource, dcat:DataService, fdp:MetadataService, fdp:FAIRDataPoint ;
+  rdfs:label "FDS Dummy Garage" ;
+  dcterms:title "FDS Dummy Garage" ;
+  dcterms:hasVersion "1.0" ;
+  fdp:metadataIssued "2023-01-07T10:00:00.000Z"^^xsd:dateTime ;
+  fdp:metadataModified "2023-01-07T10:00:00.000Z"^^xsd:dateTime ;
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0> ;
+  dcterms:description "Dummy train garage for FDS/FDT testing and demonstration purposes." ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  fdp:metadataIdentifier :identifier ;
+  dcterms:accessRights :accessRights ;
+  dcterms:publisher :publisher ;
+  dcat:endpointURL <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl> ;
+  fdp:metadataCatalog <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/trains-catalog.ttl> .
+
+:identifier a <http://purl.org/spar/datacite/Identifier> ;
+  dcterms:identifier "https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl" .
+
+:accessRights a dcterms:RightsStatement ;
+  dcterms:description "This resource has no access restriction" .
+
+:publisher a foaf:Agent ;
+  foaf:name "Marek Suchánek" .
+
+:catalogs a ldp:DirectContainer, ldp:DirectContainer ;
+  dcterms:title "Train Catalogs" ;
+  ldp:hasMemberRelation fdp:metadataCatalog ;
+  ldp:membershipResource <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl> ;
+  ldp:contains <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/trains-catalog.ttl> .
