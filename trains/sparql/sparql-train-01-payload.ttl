@@ -13,7 +13,7 @@
 @prefix fdt: <https://w3id.org/fdt/fdt-o#> .
 @prefix : <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-01-payload.ttl#> .
 
-<https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/sparql/trains/sparql-train-01-payload.ttl> a dcat:Resource, fdt:Payload ;
+<https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-01-payload.ttl> a dcat:Resource, fdt:Payload ;
   rdfs:label "SPARQL query" ;
   dcterms:title "SPARQL query" ;
   dcterms:hasVersion "1.0" ;
