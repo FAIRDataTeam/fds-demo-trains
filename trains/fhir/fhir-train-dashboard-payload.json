@@ -1,0 +1,11 @@
+{
+    "APIRequest":{
+        "protocol": "HTTP",
+        "method": "POST",
+        "resource": "/",
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": "{\"resourceType\":\"Bundle\",\"id\":\"bundle-test\",\"type\":\"batch\",\"entry\":[{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-07&_summary=count\"}},{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-08&_summary=count\"}},{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-09&_summary=count\"}},{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-10&_summary=count\"}},{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-11&_summary=count\"}},{\"request\":{\"method\":\"GET\",\"url\":\"\/c4y-pgo-2\/Condition?code=R83.03&onset-date=2020-03-12&_summary=count\"}}]}"
+    }
+}
