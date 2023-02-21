@@ -1,0 +1,51 @@
+# Repository: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl
+# Catalog: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/trains-catalog.ttl
+# Train: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl
+# Payload: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard-payload.ttl
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fdp: <https://w3id.org/fdp/fdp-o#> .
+@prefix fdt: <https://w3id.org/fdt/fdt-o#> .
+@prefix : <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl#> .
+
+<https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl> a dcat:Resource, fdt:Train ;
+  rdfs:label "COVID Dashboard Train (SPARQL)";
+  dcterms:title "COVID Dashboard Train (SPARQL)";
+  dcterms:hasVersion "1.0" ;
+  fdp:metadataIssued "2023-01-07T10:00:00.000Z"^^xsd:dateTime ;
+  fdp:metadataModified "2023-01-07T10:00:00.000Z"^^xsd:dateTime ;
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+  dcterms:description "SPARQL Train counting all triples available" ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  fdp:metadataIdentifier :identifier ;
+  dcterms:accessRights :accessRights ;
+  dcterms:publisher :publisher ;
+  dcterms:isPartOf <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/trains-catalog.ttl> ;
+  dcterms:type fdt:SPARQLTrain ;
+  dcat:keyword "COVID", "SPARQL query", "Counting" ;
+  dcat:theme
+    <http://www.wikidata.org/entity/Q62522500> ,
+    <http://edamontology.org/format_3790> ,
+    <http://purl.obolibrary.org/obo/APOLLO_SV_00000033> ,
+    <http://purl.obolibrary.org/obo/DOID_0080600> ;
+  fdt:hasTrainType fdt:SPARQLTrain ;
+  fdt:hasPayload <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard-payload.ttl> .
+
+:identifier a <http://purl.org/spar/datacite/Identifier> ;
+  dcterms:identifier "https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl" .
+
+:accessRights a dcterms:RightsStatement ;
+  dcterms:description "This resource has no access restriction" .
+
+:publisher a foaf:Agent ;
+  foaf:name "Marek Suchánek" .
+
+:payload a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Train Payload" ;
+  ldp:hasMemberRelation fdt:hasPayload ;
+  ldp:membershipResource <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl> ;
+  ldp:contains <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard-payload.ttl> .

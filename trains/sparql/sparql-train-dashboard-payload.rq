@@ -1,0 +1,18 @@
+PREFIX fhir:  <http://hl7.org/fhir/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?onsetDate (COUNT(?s) as ?count) WHERE { 
+	?s a fhir:Condition ;
+      fhir:Condition.code [
+        fhir:CodeableConcept.coding [
+          fhir:Coding.code [ fhir:value "R83.03" ]
+        ]
+      ] ;
+    fhir:Condition.onsetDateTime [ fhir:value ?onsetDate ] .
+    
+    # if need be this can be filtered
+    #FILTER ( ?onsetDate > "2020-03-08"^^xsd:date && ?onsetDate < "2020-09-08"^^xsd:date)
+}
+
+GROUP BY ?onsetDate
+ORDER BY ASC(?onsetDate)

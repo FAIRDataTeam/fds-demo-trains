@@ -26,6 +26,7 @@
   dcterms:isPartOf <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/garage.ttl> ;
   dcterms:hasPart
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-01.ttl> ,
+    <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl> ,
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/fhir/fhir-train-dashboard.ttl> ,
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/fhir/fhir-train-01.ttl> ;
   dcterms:modified "2023-01-07T10:00:00.000Z"^^xsd:dateTime .
@@ -45,5 +46,6 @@
   ldp:hasMemberRelation dcterms:hasPart ;
   ldp:contains
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-01.ttl> ,
+    <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/sparql/sparql-train-dashboard.ttl> ,
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/fhir/fhir-train-dashboard.ttl> ,
     <https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/trains/fhir/fhir-train-01.ttl> .
