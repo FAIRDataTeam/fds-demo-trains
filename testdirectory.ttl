@@ -1,0 +1,41 @@
+# Repository: https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl
+# Catalog: https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fdp: <https://w3id.org/fdp/fdp-o#> .
+@prefix fdt: <https://w3id.org/fdt/fdt-o#> .
+@prefix : <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl#> .
+
+<https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> a dcat:Resource, dcat:DataService, fdp:MetadataService, fdp:FAIRDataPoint ;
+  rdfs:label "FDT Test Station Directory" ;
+  dcterms:title "FDT Test Station Directory" ;
+  dcterms:hasVersion "1.0" ;
+  fdp:metadataIssued "2025-05-25T08:47:00.000Z"^^xsd:dateTime ;
+  fdp:metadataModified "2025-05-25T08:47:00.000Z"^^xsd:dateTime ;
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0> ;
+  dcterms:description "Test FAIR Data Train Station Directory for testing and demonstration purposes." ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  fdp:metadataIdentifier :identifier ;
+  dcterms:accessRights :accessRights ;
+  dcterms:publisher :publisher ;
+  dcat:endpointURL <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
+  fdp:metadataCatalog <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> .
+
+:identifier a <http://purl.org/spar/datacite/Identifier> ;
+  dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl" .
+
+:accessRights a dcterms:RightsStatement ;
+  dcterms:description "This resource has no access restriction" .
+
+:publisher a foaf:Agent ;
+  foaf:name "Luiz Bonino" .
+
+:catalogs a ldp:DirectContainer, ldp:DirectContainer ;
+  dcterms:title "Station Directory" ;
+  ldp:hasMemberRelation fdp:metadataCatalog ;
+  ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
+  ldp:contains <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> .
