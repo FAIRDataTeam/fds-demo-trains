@@ -1,5 +1,8 @@
 # Repository: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl
-# Catalog: https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl
+# Catalog: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl
+# Station1: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station1.ttl
+# Station2: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station2.ttl
+# Station3: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station3.ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
