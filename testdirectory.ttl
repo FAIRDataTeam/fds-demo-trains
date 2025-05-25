@@ -1,4 +1,4 @@
-# Repository: https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl
+# Repository: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl
 # Catalog: https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -8,9 +8,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix fdp: <https://w3id.org/fdp/fdp-o#> .
 @prefix fdt: <https://w3id.org/fdt/fdt-o#> .
-@prefix : <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl#> .
+@prefix : <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl#> .
 
-<https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> a dcat:Resource, dcat:DataService, fdp:MetadataService, fdp:FAIRDataPoint ;
+<https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl> a dcat:Resource, dcat:DataService, fdp:MetadataService, fdp:FAIRDataPoint ;
   rdfs:label "FDT Test Station Directory" ;
   dcterms:title "FDT Test Station Directory" ;
   dcterms:hasVersion "1.0" ;
@@ -22,7 +22,7 @@
   fdp:metadataIdentifier :identifier ;
   dcterms:accessRights :accessRights ;
   dcterms:publisher :publisher ;
-  dcat:endpointURL <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
+  dcat:endpointURL <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl> ;
   fdp:metadataCatalog <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> .
 
 :identifier a <http://purl.org/spar/datacite/Identifier> ;

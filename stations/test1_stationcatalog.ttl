@@ -1,5 +1,8 @@
-# Repository: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/directory.ttl
-# Catalog: https://raw.githubusercontent.com/MarekSuchanek/fds-dummy-trains/main/stations/stations-catalog.ttl
+# Repository: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl
+# Catalog: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl
+# Station1: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station1.ttl
+# Station2: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station2.ttl
+# Station3: https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station3.ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -8,9 +11,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix fdp: <https://w3id.org/fdp/fdp-o#> .
 @prefix fdt: <https://w3id.org/fdt/fdt-o#> .
-@prefix : <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl#> .
+@prefix : <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl#> .
 
-<https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> a dcat:Resource, dcat:Catalog ;
+<https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl> a dcat:Resource, dcat:Catalog ;
   rdfs:labels "Test Stations Catalog" ;
   dcterms:title "Test Stations Catalog" ;
   dcterms:hasVersion "1.0" ;
@@ -22,15 +25,15 @@
   fdp:metadataIdentifier :identifier ;
   dcterms:accessRights :accessRights ;
   dcterms:publisher :publisher ;
-  dcterms:isPartOf <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
+  dcterms:isPartOf <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl> ;
   dcterms:hasPart
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ,
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ,
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl> ;
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station1.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station2.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station3.ttl> ;
   dcterms:modified "2025-05-25T08:47:00.000Z"^^xsd:dateTime .
 
 :identifier a <http://purl.org/spar/datacite/Identifier> ;
-  dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl" .
+  dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl" .
 
 :accessRights a dcterms:RightsStatement ;
   dcterms:description "This resource has no access restriction" .
@@ -40,9 +43,9 @@
 
 :stations a ldp:DirectContainer ;
   dcterms:title "Stations" ;
-  ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> ;
+  ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl> ;
   ldp:hasMemberRelation dcterms:hasPart ;
   ldp:contains
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ,
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ,
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl> .
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station1.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station2.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test_station3.ttl> .
