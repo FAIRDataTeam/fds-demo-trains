@@ -33,7 +33,7 @@
   dcat:keyword "FHIR", "SPARQL", "Example" .
 
 :identifier a <http://purl.org/spar/datacite/Identifier> ;
-  dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl
+  dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl" .
 
 :accessRights a dcterms:RightsStatement ;
   dcterms:description "This resource has no access restriction" .

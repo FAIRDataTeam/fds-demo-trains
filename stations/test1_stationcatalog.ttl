@@ -24,8 +24,8 @@
   dcterms:publisher :publisher ;
   dcterms:isPartOf <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
   dcterms:hasPart
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ;
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ;
+    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ,
     <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl> ;
   dcterms:modified "2025-05-25T08:47:00.000Z"^^xsd:dateTime .
 
@@ -43,6 +43,6 @@
   ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> ;
   ldp:hasMemberRelation dcterms:hasPart ;
   ldp:contains
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ;
-    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ;
+    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station1.ttl> ,
+    <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station2.ttl> ,
     <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test_station3.ttl> .
