@@ -26,7 +26,7 @@
   dcterms:accessRights :accessRights ;
   dcterms:publisher :publisher ;
   dcat:endpointURL <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl> ;
-  fdp:metadataCatalog <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> .
+  fdp:metadataCatalog <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl> .
 
 :identifier a <http://purl.org/spar/datacite/Identifier> ;
   dcterms:identifier "https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl" .
@@ -40,5 +40,5 @@
 :catalogs a ldp:DirectContainer, ldp:DirectContainer ;
   dcterms:title "Station Directory" ;
   ldp:hasMemberRelation fdp:metadataCatalog ;
-  ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/testdirectory.ttl> ;
-  ldp:contains <https://raw.githubusercontent.com/FAIRDataTram/fds-demo-trains/main/stations/test1_stationcatalog.ttl> .
+  ldp:membershipResource <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/testdirectory.ttl> ;
+  ldp:contains <https://raw.githubusercontent.com/FAIRDataTeam/fds-demo-trains/refs/heads/main/stations/test1_stationcatalog.ttl> .
